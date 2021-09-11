@@ -1,14 +1,15 @@
-let productRound1Price = 235000;
-let priceOfRound1 = [];
+let productPrice = 29300000;
+let priceOfRound3 = [];
+
 function listGuestPrice() {
     let priceOfPlayer1 = document.getElementById("price1").value;
     let priceOfPlayer2 = document.getElementById("price2").value;
     let priceOfPlayer3 = document.getElementById("price3").value;
     let priceOfPlayer4 = document.getElementById("price4").value;
-    priceOfRound1[0] = comparePrice(priceOfPlayer1, productRound1Price);
-    priceOfRound1[1] = comparePrice(priceOfPlayer2, productRound1Price);
-    priceOfRound1[2] = comparePrice(priceOfPlayer3, productRound1Price);
-    priceOfRound1[3] = comparePrice(priceOfPlayer4, productRound1Price);
+    priceOfRound3[0] = comparePrice(priceOfPlayer1, productPrice);
+    priceOfRound3[1] = comparePrice(priceOfPlayer2, productPrice);
+    priceOfRound3[2] = comparePrice(priceOfPlayer3, productPrice);
+    priceOfRound3[3] = comparePrice(priceOfPlayer4, productPrice);
 }
 
 function comparePrice(guessPrice, truePrice) {
@@ -29,6 +30,6 @@ function findTheWinnerPrice(price) {
 }
 
 function whoIsTheWinner() {
-    let index = findTheWinnerPrice(priceOfRound1);
+    let index = findTheWinnerPrice(priceOfRound3);
     document.getElementById("show").innerText = "The winner is player " + (index + 1);
 }

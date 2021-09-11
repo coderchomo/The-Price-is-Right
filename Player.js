@@ -14,7 +14,7 @@ class Player{
         this.age=age;
     }
 }
-let player1=new Player("a","1","");
-let player2=new Player("b","2","");
-let player3=new Player("c","3","");
-let player4=new Player("d","4","");
+let player1=new Player("a","1","true");
+let player2=new Player("b","2","true");
+let player3=new Player("c","3","true");
+let player4=new Player("d","4","true");

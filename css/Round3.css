@@ -1,0 +1,35 @@
+div {
+    margin: auto;
+    display: flex;
+}
+
+table {
+    width: 1000px;
+    margin: auto;
+}
+
+img {
+    width: 150px;
+    height: 175px;
+}
+
+#nextRound {
+    text-align: right;
+}
+
+#player td {
+    width: 25%;
+    text-align: center;
+}
+
+#input {
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+input {
+    size: 30px;
+}
