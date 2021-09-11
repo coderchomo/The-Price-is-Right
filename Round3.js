@@ -18,18 +18,17 @@ function comparePrice(guessPrice, truePrice) {
 
 function findTheWinnerPrice(price) {
     listGuestPrice();
+    let index=0;
     let winnerPrice = price[0];
-    let index;
     for (let i = 0; i < price.length; i++) {
         if (winnerPrice > price[i] && price[i] > 0) {
             winnerPrice = price[i];
             index = i;
         }
-    }
-    return index;
+    }return index;
 }
 
 function whoIsTheWinner() {
-    let index = findTheWinnerPrice(priceOfRound3);
-    document.getElementById("show").innerText = "The winner is player " + (index + 1);
+    let index= findTheWinnerPrice(priceOfRound3);
+    document.getElementById("show").innerText = "The winner is player " + (index+1);
 }

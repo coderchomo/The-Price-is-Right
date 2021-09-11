@@ -18,7 +18,7 @@ function comparePrice(guessPrice, truePrice) {
 function findTheWinnerPrice(price) {
     listGuestPrice();
     let winnerPrice = price[0];
-    let index;
+    let index=0;
     for (let i = 0; i < price.length; i++) {
         if (winnerPrice > price[i] && price[i] > 0) {
             winnerPrice = price[i];
