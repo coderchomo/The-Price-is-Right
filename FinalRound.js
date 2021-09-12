@@ -36,10 +36,10 @@ function findTheWinnerPrice(price) {
 
 function whoIsTheWinner() {
     let index = findTheWinnerPrice(priceOfRound5);
-    document.getElementById("51").innerText = "Cặp da có giá là " + productPrice51;
-    document.getElementById("52").innerText = "Bánh trung thu Vọng Nguyệt có giá là " + productPrice52;
-    document.getElementById("53").innerText = "Chú chó của chúng ta có giá là " + productPrice53;
-    document.getElementById("54").innerText = "SH 2021 có giá là " + productPrice54;
-    document.getElementById("55").innerText = "Loa Marshall Woburn2 có giá là " + productPrice55;
-    document.getElementById("total").innerText = "Tổng giá trị sản phẩm là " + totalPriceRound5;
+    document.getElementById("show").innerText = "The winner is player " + (index + 1);
+    document.getElementById("51").innerHTML = "Cặp da công sở cao cấp "+"<br>" + productPrice51;
+    document.getElementById("52").innerHTML = "Hộp bánh trung thu cao cấp Vọng Nguyệt " +"<br>" + productPrice52;
+    document.getElementById("53").innerHTML = "1 Chiếc chó fox sóc sang sịn mịn " +"<br>" + productPrice53;
+    document.getElementById("54").innerHTML = "SH 2021 siêu chanh sả " +"<br>" + productPrice54;
+    document.getElementById("55").innerHTML = "Loa Marshall Woburn2 " +"<br>" + productPrice55;
 }

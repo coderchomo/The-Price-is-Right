@@ -11,11 +11,9 @@ function listGuestPrice() {
     priceOfRound3[2] = comparePrice(priceOfPlayer3, productPrice);
     priceOfRound3[3] = comparePrice(priceOfPlayer4, productPrice);
 }
-
 function comparePrice(guessPrice, truePrice) {
     return truePrice - guessPrice;
 }
-
 function findTheWinnerPrice(price) {
     listGuestPrice();
     let index=0;
@@ -27,8 +25,25 @@ function findTheWinnerPrice(price) {
         }
     }return index;
 }
-
 function whoIsTheWinner() {
     let index= findTheWinnerPrice(priceOfRound3);
     document.getElementById("show").innerText = "The winner is player " + (index+1);
+}
+function getName(){
+    let player1=document.getElementById("player1").value;
+    let player2=document.getElementById("player2").value;
+    let player3=document.getElementById("player3").value;
+    let player4=document.getElementById("player4").value;
+    if(player1!==""&&player1!==undefined){
+        document.getElementById("name1").innerHTML="<p id='player1'>"+player1+"</p>";
+    }
+    if(player2!==""&&player2!==undefined){
+        document.getElementById("name2").innerHTML="<p id='player2'>"+player2+"</p>";
+    }
+    if(player3!==""&&player3!==undefined){
+        document.getElementById("name3").innerHTML="<p id='player3'>"+player3+"</p>";
+    }
+    if(player4!==""&&player4!==undefined){
+        document.getElementById("name4").innerHTML="<p id='player4'>"+player4+"</p>";
+    }
 }

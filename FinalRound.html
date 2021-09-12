@@ -12,10 +12,10 @@
             <th colspan="4"><h1>Final Round: Who is the BigBoss</h1></th>
         </tr>
         <tr id="player">
-            <td><img src="Image/player1.jpg" alt="player1"></td>
-            <td><img src="Image/player2.jpg" alt="player2"></td>
-            <td><img src="Image/player3.jpg" alt="player3"></td>
-            <td><img src="Image/player4.jpg" alt="player4"></td>
+            <td><img src="Image/realplayer1.jpg" alt="player1"></td>
+            <td><img src="Image/realplayer2.jpg" alt="player2"></td>
+            <td><img src="Image/realplayer3.jpg" alt="player3"></td>
+            <td><img src="Image/realplayer4.jpg" alt="player4"></td>
         </tr>
         <tr id="input">
             <td><label for="price1"></label><input type="number" id="price1"></td>
@@ -24,34 +24,41 @@
             <td><label for="price4"></label><input type="number" id="price4"></td>
         </tr>
         <tr id="result">
-            <td></td>
-            <td colspan="1"><img
+            <td><img
                     src="Image/productRound51.jpg"
                     alt="kaban">
                 <h4 id="51">Cặp da công sở cao cấp</h4>
-            </td>            <td colspan="1"><img
+            </td>
+            <td><img
                     src="Image/productRound52.jpg"
                     alt="cake">
                 <h4 id="52">Hộp bánh trung thu cao cấp Vọng Nguyệt</h4>
-            </td>            <td colspan="1"><img
+            </td>
+            <td><img
                     src="Image/productRound53.jpg"
                     alt="puppy">
                 <h4 id="53">1 Chiếc chó fox sóc sang sịn mịn</h4>
-            </td>            <td colspan="1"><img
+            </td>
+            <td><img
                     src="Image/productRound54.jpg"
                     alt="SH2021">
                 <h4 id="54">SH 2021 siêu chanh sả</h4>
-            </td>            <td colspan="1"><img
+            </td>
+            <td><img
                     src="Image/productRound55.jpg"
                     alt="speaker">
                 <h4 id="55">Loa Marshall Woburn2</h4>
             </td>
+
+        </tr>
+        <tr>
             <td>
                 <button id="findWinner" onclick="whoIsTheWinner()">Find the winner</button>
             </td>
         </tr>
-        <tr><h1 id="total">Tổng giá trị giải thưởng là?</h1></tr>
-        <tr></tr>
+        <tr>
+            <td colspan="5" id="show"></td>
+        </tr>
     </table>
 </div>
 <script src="FinalRound.js"></script>

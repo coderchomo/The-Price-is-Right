@@ -4,50 +4,76 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    span {
+        font-size: 50px;
+    }
+
+    table {
+        width: 600px;
+        text-align: center;
+    }
+
+    td {
+        width: 25%;
+    }
+
+    select {
+        width: 100%;
+    }
+</style>
 <body>
 <h1>CountDown Game</h1>
-<table><tr><img src="Image/productRound2.jpg" alt="baker"></tr>
+<table>
     <tr>
-        <td>3</td>
-        <td>6</td>
-        <td>3</td>
-        <td>6</td>
+        <td colspan="4"><img src="Image/productRound2.jpg" alt="baker"></td>
+    </tr>
+    <tr id="price">
+        <td><span>3</span></td>
+        <td><span>6</span></td>
+        <td><span>3</span></td>
+        <td><span>6</span></td>
     </tr>
     <tr>
         <td>
             <select id="1" onchange="takeTheValue1()">
-                <option value="5"> > </option>
-                <option value="6"> < </option>
+                <option></option>
+                <option value="5"> ></option>
+                <option value="6"> <</option>
             </select>
         </td>
         <td>
             <select id="2" onchange="takeTheValue2()">
-                <option value="7"> > </option>
-                <option value="8"> < </option>
+                <option></option>
+                <option value="7"> ></option>
+                <option value="8"> <</option>
             </select>
         </td>
         <td>
             <select id="3" onchange="takeTheValue3()">
-                <option value="9"> > </option>
-                <option value="10"> < </option>
+                <option></option>
+                <option value="9"> ></option>
+                <option value="10"> <</option>
             </select>
         </td>
         <td>
             <select id="4" onchange="takeTheValue4()">
-                <option value="11"> > </option>
-                <option value="12"> < </option>
+                <option></option>
+                <option value="11"> ></option>
+                <option value="12"> <</option>
             </select>
         </td>
-        <td>
-        <button onclick="rightOrWrong()">Confirm</button>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <button onclick="rightOrWrong()">Confirm</button>
         </td>
     </tr>
 </table>
 
 
-
-<tr><p id="result"></p></tr>
-<tr><a type="button" href="Round3.html">NextRound</a></tr>
+<p id="result"></p>
+<a type="button" href="Round3.html">NextRound</a>
 <script src="CountDownGame.js"></script>
 </body>
 </html>
