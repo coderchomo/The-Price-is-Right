@@ -43,3 +43,21 @@ function whoIsTheWinner() {
     document.getElementById("54").innerHTML = "SH 2021 siêu chanh sả " +"<br>" + productPrice54;
     document.getElementById("55").innerHTML = "Loa Marshall Woburn2 " +"<br>" + productPrice55;
 }
+function getName(){
+    let player1=document.getElementById("player1").value;
+    let player2=document.getElementById("player2").value;
+    let player3=document.getElementById("player3").value;
+    let player4=document.getElementById("player4").value;
+    if(player1!==""&&player1!==undefined){
+        document.getElementById("name1").innerHTML="<p id='player1'>"+player1+"</p>";
+    }
+    if(player2!==""&&player2!==undefined){
+        document.getElementById("name2").innerHTML="<p id='player2'>"+player2+"</p>";
+    }
+    if(player3!==""&&player3!==undefined){
+        document.getElementById("name3").innerHTML="<p id='player3'>"+player3+"</p>";
+    }
+    if(player4!==""&&player4!==undefined){
+        document.getElementById("name4").innerHTML="<p id='player4'>"+player4+"</p>";
+    }
+}
