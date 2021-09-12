@@ -1,10 +1,24 @@
 let productRound2Price=2499000;
-let trueReturn="aabb";
-let playerChoose=document.getElementById("1").value+document.getElementById("2").value+document.getElementById("3").value+document.getElementById("4");
+function takeTheValue1(){
+    let value1=document.getElementById("1").value;
+    return value1;
+}
+function takeTheValue2(){
+    let value2=document.getElementById("2").value;
+    return value2;
+}
+function takeTheValue3(){
+    let value3=document.getElementById("3").value;
+    return value3;
+}
+function takeTheValue4(){
+    let value4=document.getElementById("4").value;
+    return value4;
+}
 function rightOrWrong(){
-    if(playerChoose==trueReturn){
-        document.getElementById("a").innerText="Congratulation you won";
+    if(takeTheValue1()==5&&takeTheValue2()==7&&takeTheValue3()==10&&takeTheValue4()==12){
+        alert("You Won");
     }else{
-     alert("Choose again");
+        alert("Not Correct. Try again");
     }
 }

@@ -5,6 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-
+<div>
+    <table>
+        <tr>
+            <h1>Mystery X</h1>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <img src="Image/productRound41.jpg" alt="Noi com dien">
+            </td>
+            <td colspan="4">
+                <img src="Image/productRound42.jpg" alt="Quat tran">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <select id="1" onchange="takeProduct1Value()">
+                    <option value="1480000">1480000</option>
+                    <option value="1490000">1490000</option>
+                </select>
+            </td>
+            <td colspan="4">
+                <select id="2" onchange="takeProduct2Value()">
+                    <option value="2920000">2920000</option>
+                    <option value="2910000">2910000</option>
+                </select>
+            </td>
+        </tr>
+        <tr><button onclick="check1()">Confirm1</button></tr>
+        <tr><button onclick="check2()">Confirm2</button></tr>
+        <tr>
+            <p id="caro"></p>
+        </tr>
+        <tr id="nextRound">
+            <td colspan="4">
+                <a type="button" href="FinalRound.html">Next Round</a>
+            </td>
+        </tr>
+    </table>
+</div>
+<script src="MysteryX.js"></script>
+<script src="MysteryXProduct.js"></script>
 </body>
 </html>
